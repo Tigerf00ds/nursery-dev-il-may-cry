@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head> <!-- partie invisible -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de réservation</title>
+    <style>
+        body {
+            width: 50%;
+            margin: auto;
+            border: 1px solid gray;
+            padding: 20px 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h1,
+        h3 {
+            background: white;
+            text-align: center;
+        }
+
+        label,
+        input,
+        select,
+        textarea {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body> <!-- corps de la page début du contenu qui sera affiché -->
+
+    <h1>Votre reservation d'hôtel </h1> <!-- Titre de niveau 1 -->
+    <h3> champs obligatoires*</h3> <!-- Titre de niveau 3 (plus petit) -->
+    <br>
+    <form method="get">
+        <label for="fname">Votre nom* :<br>
+            <input type="text" name="fname" placeholder="nom de famille">
+        </label><br>
+
+        <form method="get">
+            <label for="fname">Votre prénom* :<br>
+                <input type="text" name="fname" placeholder="prénom">
+            </label><br>
+
+            <label for="tel">Votre numéro de téléphone* :<br>
+                <input type="tel" name="tel" placeholder="0604020103" id="tel">
+            </label><br>
+
+
+            <label for="fname">Adresse e-mail* :<br>
+                <input type="text" name="fname" placeholder="">
+            </label><br>
+
+            <label for="fname">Sélectionner la ville :</label><br>
+            <select>
+                <option value="Lille">Lille</option>
+                <option value="Paris">Paris</option>
+                <option value="Marseille">Marseille</option>
+                <option value="Bordeaux">Bordeaux</option>
+                <option value="Nantes">Nantes</option>
+                <option value="Lyon">Lyon</option>
+                <option value="La Rochelle">La Rochelle</option>
+                <option value="Poitiers">Poitiers</option>
+                <option value="Toulouse">Toulouse</option>
+
+            </select><br>
+
+
+            <label for="date_arrivee">date d'arrivée*</label><br>
+
+            <input type="date" id="date_arrivee"><br>
+            
+            
+            <label for="fname">Nombre de personnes*:<br>
+                <input type="number" name="fname" placeholder="">
+            </label><br>
+
+            
+            <input type="checkbox"> Climatisation
+            <input type="checkbox"> Mini Bar
+            <input type="checkbox"> Jacuzzi <br>
+            <textarea>Ajouter un commentaire.</textarea><br>
+            Acceptez vous les conditions générales de ventes <a href="cgv.html">CGV</a><br>
+            oui <input type="radio" name="cgv">
+            non <input type="radio" name="cgv"> 
+            <br><button type="submit" name="submit">Envoyer ma demande</button><br>
+
+            <!-- début du formulaire -->
+            <form id="registration_form" method="POST">
+
+
+            </form> <!--  fin du formulaire -->
+</body> <!-- fin du contenu de la page -->
+
+</html>
